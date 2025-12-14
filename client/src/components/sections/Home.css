@@ -5,80 +5,122 @@
   min-height: calc(100vh - 100px); 
   padding-top: 6rem;
   padding-bottom: 2rem;
+  overflow: hidden; /* Prevent scroll if something goes wide */
 }
 
 .home-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px; /* Allow wide screens */
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  gap: 2rem; 
+  align-items: center; /* Vertically center */
+  padding-left: 5%; /* Left gutter */
+  height: 100%;
 }
 
 /* 2-Column Hero Layout */
 .home-hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
+  height: 100%;
 }
 
-/* New Box Container for Text */
+/* Text Container */
 .hero-content-box {
-  flex: 1;
-  max-width: 550px; /* Constrained width to avoid overlap */
-  padding: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.05); /* Subtle border for the "box" feel */
-  background: rgba(10, 10, 10, 0.4); /* Subtle background */
-  backdrop-filter: blur(5px);
-  border-radius: 16px;
-  /* Ensure it doesn't grow too wide */
-  margin-right: auto; 
+  flex: 0 0 auto; /* Don't grow, don't shrink */
+  width: 50%; /* Strictly take up left half */
+  max-width: 650px;
+  padding: 2rem;
+  /* Removed border/background to match reference style "cleaner" look, 
+     but keeping the logical grouping. 
+     If user insisted on "box", I can re-add background: rgba(0,0,0,0.5); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10; /* Ensure text is above background elements */
 }
 
 .hero-spacer {
-  width: 350px; 
-  flex-shrink: 0;
-  display: none;
+  /* This spacer represents the safety zone for the image */
+  flex: 1;
+  min-width: 400px; /* Ensure at least 400px for the image on the right */
+  height: 1px;
 }
 
 .greeting {
-  font-size: 2.5rem; /* Slightly smaller to fit the box nicely */
+  font-size: 3.5rem; /* Large and bold like reference */
   margin-bottom: 1rem;
   line-height: 1.1;
+  font-weight: 700;
 }
 
 .subheading {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  color: var(--text-secondary);
+  color: var(--accent-color); /* Green like reference */
   margin-bottom: 1.5rem;
   line-height: 1.4;
   font-family: var(--font-body);
 }
 
 .highlight {
-  color: var(--text-primary);
-  border-bottom: 2px solid var(--accent-color);
+  color: white;
+  border-bottom: none; /* Removed underline to match clean reference */
 }
 
 .description {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   line-height: 1.6;
+  max-width: 90%;
 }
 
 .actions {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
-  flex-wrap: wrap; /* Allow wrapping if space is tight */
+}
+
+/* Buttons like reference */
+.btn-primary {
+  background: var(--accent-color);
+  color: black;
+  border: none;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 50px; /* Pill shape */
+  box-shadow: 0 5px 15px rgba(57, 255, 20, 0.3);
+}
+
+.btn-primary:hover {
+  background: #32d613;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(57, 255, 20, 0.4);
+}
+
+.btn-secondary.contact-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 50px;
+  padding: 0.9rem 2rem;
+}
+
+.btn-secondary.contact-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Mobile Responsive */
 @media (max-width: 900px) {
+  .home-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+  }
+
   .home-hero {
     flex-direction: column;
     text-align: center;
@@ -86,17 +128,20 @@
   }
 
   .hero-content-box {
-    padding: 1.5rem;
+    width: 100%;
     max-width: 100%;
-    margin: 0 auto;
-    background: transparent; /* Remove box look on mobile if it feels too cramped, or keep it */
-    border: none;
+    padding: 1rem;
+    align-items: center;
   }
 
   .hero-spacer {
     display: none;
   }
   
+  .greeting {
+    font-size: 2.5rem;
+  }
+
   .actions {
     justify-content: center;
     flex-direction: column;
@@ -105,15 +150,6 @@
 
   .btn {
     width: 100%;
-    max-width: 300px;
     justify-content: center;
-  }
-}
-
-/* Desktop Specific Adjustments to accommodate Fixed Profile */
-@media (min-width: 901px) {
-  .home-container {
-    padding-right: 350px; 
-    align-items: flex-start;
   }
 }
