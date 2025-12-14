@@ -26,7 +26,7 @@ const Home: React.FC<{ setActiveSection: (s: string) => void }> = ({ setActiveSe
           <a href="/resume.pdf" download className="btn btn-primary">
             Download Resume
           </a>
-          <button onClick={() => setActiveSection('contact')} className="btn btn-secondary">
+          <button onClick={() => setActiveSection('contact')} className="btn btn-secondary contact-btn">
             Contact Me
           </button>
         </div>

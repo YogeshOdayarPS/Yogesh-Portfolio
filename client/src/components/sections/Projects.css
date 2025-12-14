@@ -120,7 +120,7 @@
 .modal-section {
   margin-bottom: 2rem;
   padding: 1rem;
-  background: rgba(57, 255, 20, 0.05);
+  background: rgba(57, 255, 255, 0.05);
   border-left: 3px solid var(--accent-color);
 }
 
@@ -136,6 +136,12 @@
   margin-bottom: 2rem;
 }
 
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
   .modal-overlay {
     padding: 1rem;
@@ -148,5 +154,15 @@
   
   .modal-title {
     font-size: 1.75rem;
+  }
+  
+  .modal-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .modal-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 }

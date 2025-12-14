@@ -6,7 +6,9 @@
 }
 
 .home-content {
-  max-width: 800px;
+  max-width: 650px; /* Reduced width for better spacing/alignment */
+  margin-right: auto; /* Push content slightly left */
+  padding-left: 2rem; /* Add breathing room from left edge */
 }
 
 .greeting {
@@ -41,7 +43,26 @@
   gap: 1.5rem;
 }
 
+/* Contact Button Styling Update */
+.btn-secondary.contact-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+}
+
+.btn-secondary.contact-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--text-primary);
+}
+
 @media (max-width: 768px) {
+  .home-content {
+    padding-left: 0;
+    margin-right: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
   .greeting {
     font-size: 2.5rem;
   }
@@ -53,10 +74,12 @@
   .actions {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
   
   .btn {
     width: 100%;
+    max-width: 300px; /* Prevent overly wide buttons on tablets */
     justify-content: center;
   }
 }

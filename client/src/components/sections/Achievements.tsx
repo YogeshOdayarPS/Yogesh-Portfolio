@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Trophy, Star, Users } from 'lucide-react';
+import { Trophy, Star, Users, Mic, Presentation, ShieldCheck } from 'lucide-react';
 import './Achievements.css';
 
 const achievements = [
@@ -18,7 +18,7 @@ const achievements = [
       'St. Joseph’s Institute of Technology – 1st Place, Echo Pitch (Incognito’25)',
       'Gojan School of Business & Technology – 1st Prize Pitching, 3rd Prize Quiz',
       'New Prince Shri Bhavani College – 2nd Place, Technical Quiz',
-      'MGR Educational & Research Institute – 2nd Prize, SDG Ideathon'
+      'MGR Educational & Research Institute – 2nd Prize, SDG Ideathon (CPT Tech Summit)'
     ]
   },
   {
@@ -32,12 +32,20 @@ const achievements = [
     ]
   },
   {
-    category: 'Leadership',
+    category: 'Leadership - Coordinator',
+    icon: ShieldCheck,
+    items: [
+      'GUVI Hackathon (IEEE TEMS × HCL GUVI) (OCT 2025)',
+      'INTEMSTELLAR – IEEE TEMS One-Day Symposium (NOV 2025)',
+      'CONNIQXION – Online Quiz Event (1st Years) (OCT 2024)'
+    ]
+  },
+  {
+    category: 'Leadership - Volunteer',
     icon: Users,
     items: [
-      'GUVI Hackathon, INTEMSTELLAR, CONNIQXION Coordinator',
-      'Winspire 1.0 Volunteer',
-      'Cognizant SPIN Event Volunteer'
+      'Winspire 1.0 – Panelist Speaker (March 2025)',
+      'Cognizant SPIN Event – Nov 7, 2025'
     ]
   }
 ];

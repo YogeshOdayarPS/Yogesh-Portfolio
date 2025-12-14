@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink } from 'lucide-react';
+import { X, ExternalLink, FileText } from 'lucide-react';
 import './Projects.css';
 
 export interface Project {
@@ -12,6 +12,7 @@ export interface Project {
   link?: string;
   outcome?: string;
   details: string;
+  patentPdf?: string;
 }
 
 const projectsData: Project[] = [
@@ -49,7 +50,8 @@ const projectsData: Project[] = [
     description: 'Homeostatic Flying Hovercraft for military use.',
     tech: ['IPR Publication', 'Research', 'Defence Tech'],
     details: 'Published: Sept 13, 2024. Office of the Controller General of Patents, Govt. of India. Paper: Homeostatic Flying Hovercraft: Efficient and Durable Solutions for Military and Rescue Missions.',
-    outcome: 'IPR Published'
+    outcome: 'IPR Published',
+    patentPdf: '/patent.pdf'
   }
 ];
 
@@ -115,11 +117,19 @@ const Projects: React.FC = () => {
                     ))}
                   </div>
 
-                  {selectedProject.link && (
-                    <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                      View Live <ExternalLink size={18} />
-                    </a>
-                  )}
+                  <div className="modal-actions">
+                    {selectedProject.link && (
+                      <a href={selectedProject.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                        View Live <ExternalLink size={18} />
+                      </a>
+                    )}
+
+                    {selectedProject.patentPdf && (
+                      <a href={selectedProject.patentPdf} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                        View Patent Paper <FileText size={18} />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </motion.div>

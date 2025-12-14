@@ -20,6 +20,22 @@ const skillCategories = [
     skills: ['Git', 'GitHub', 'VS Code', 'Power BI', 'Excel']
   },
   {
+    title: 'Certifications',
+    skills: ['Great Learning', 'Accenture iAspire', 'Google', 'Cisco (Networking Basics)']
+  },
+  {
+    title: 'NPTEL',
+    skills: ['Java', 'DBMS', 'Cloud Computing', 'Python']
+  },
+  {
+    title: 'Spoken Tutorial',
+    skills: ['Java', 'C', 'CSS', 'R', 'Git']
+  },
+  {
+    title: 'Relevant Coursework',
+    skills: ['DSA', 'DBMS', 'Cloud Computing', 'Web Technologies', 'OOP']
+  },
+  {
     title: 'Interests',
     skills: ['Data Science', 'Blockchain', 'Machine Learning', 'AI']
   },
@@ -36,7 +52,7 @@ const Skills: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <h2 className="section-title">Skills</h2>
+      <h2 className="section-title">Skills & Certifications</h2>
       
       <div className="skills-grid">
         {skillCategories.map((category, index) => (
@@ -45,7 +61,7 @@ const Skills: React.FC = () => {
             className="glass-card skill-category"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
+            transition={{ delay: index * 0.05 }}
           >
             <h3 className="category-title">{category.title}</h3>
             <div className="tags-container">

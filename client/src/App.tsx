@@ -8,6 +8,8 @@ import Skills from "./components/sections/Skills";
 import Achievements from "./components/sections/Achievements";
 import Contact from "./components/sections/Contact";
 import profileImg from "./assets/profile.jpg";
+import logoImg from "./assets/logo.png";
+import { MapPin, Linkedin, Github, Mail } from "lucide-react";
 import "./App.css";
 
 function App() {
@@ -43,6 +45,30 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* Top Left Logo & Location */}
+      <div className="top-left-header">
+        <div className="logo-container">
+          <img src={logoImg} alt="Logo" className="app-logo" />
+        </div>
+        <div className="location-badge">
+          <MapPin size={14} className="location-icon" />
+          <span>Chennai, TN, India</span>
+        </div>
+      </div>
+
+      {/* Top Right Social Links (Desktop) */}
+      <div className="top-right-socials">
+        <a href="https://www.linkedin.com/in/yogesh-odayar-p-s-8a2077293/" target="_blank" rel="noopener noreferrer" className="social-link">
+          <Linkedin size={20} />
+        </a>
+        <a href="https://github.com/YogeshOdayarPS" target="_blank" rel="noopener noreferrer" className="social-link">
+          <Github size={20} />
+        </a>
+        <a href="mailto:yogeshodayarps@gmail.com" className="social-link">
+          <Mail size={20} />
+        </a>
+      </div>
+
       {/* Profile Photo - Persistent */}
       <div className={`profile-container ${activeSection === 'home' ? 'home-mode' : ''}`}>
         <div className="profile-circle">
