@@ -120,6 +120,12 @@
   .top-right-socials {
     right: 2rem;
   }
+
+  /* When NOT home mode, move profile down to avoid overlap with socials */
+  .profile-container:not(.home-mode) {
+    top: 5rem; /* Push down below the social icons row */
+    right: 2rem;
+  }
 }
 
 .main-content {

@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Ensure full height minus navbar area but keep it tight */
   min-height: calc(100vh - 100px); 
-  padding-top: 6rem; /* Space for top logo/socials */
+  padding-top: 6rem;
   padding-bottom: 2rem;
 }
 
@@ -14,7 +13,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Reduced gap between hero and highlights */
+  gap: 2rem; 
 }
 
 /* 2-Column Hero Layout */
@@ -27,24 +26,19 @@
 
 .hero-text {
   flex: 1;
-  max-width: 600px; /* Limit text width as requested */
+  max-width: 600px;
   padding-right: 2rem;
 }
 
 .hero-spacer {
-  /* This spacer pushes text left, leaving room for the fixed profile image on the right */
   width: 350px; 
   flex-shrink: 0;
-  display: none; /* Only need this if profile is absolute. If profile is flex, remove display:none */
+  display: none;
 }
-
-/* On desktop, we want the text to align left and profile right. 
-   Since profile is FIXED in App.tsx, we just need to ensure text doesn't overlap it 
-   and sits nicely on the left. The max-width: 600px helps this. */
 
 .greeting {
   font-size: 3rem;
-  margin-bottom: 0.5rem; /* Tighten spacing */
+  margin-bottom: 0.5rem;
   line-height: 1.1;
 }
 
@@ -52,7 +46,7 @@
   font-size: 1.35rem;
   font-weight: 400;
   color: var(--text-secondary);
-  margin-bottom: 1rem; /* Tighten spacing */
+  margin-bottom: 1rem;
   line-height: 1.4;
   font-family: var(--font-body);
 }
@@ -75,54 +69,6 @@
   align-items: center;
 }
 
-/* Home Highlights Section */
-.home-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 900px; /* Keep it compact */
-  margin-top: 1rem; /* Visual connection to hero */
-}
-
-.highlight-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
-  background: rgba(20, 20, 20, 0.4); /* More transparent */
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  min-height: 80px;
-}
-
-.highlight-card:hover {
-  background: rgba(20, 20, 20, 0.7);
-  border-color: var(--accent-color);
-  box-shadow: 0 5px 15px -5px rgba(57, 255, 20, 0.15);
-}
-
-.highlight-icon {
-  color: var(--accent-color);
-  background: rgba(57, 255, 20, 0.1);
-  padding: 0.5rem;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.highlight-text h3 {
-  font-size: 0.9rem;
-  margin-bottom: 0.2rem;
-  font-weight: 600;
-}
-
-.highlight-text p {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  margin: 0;
-}
-
 /* Mobile Responsive */
 @media (max-width: 900px) {
   .home-hero {
@@ -141,12 +87,6 @@
     display: none;
   }
   
-  .home-highlights {
-    grid-template-columns: 1fr; /* Stack highlights */
-    max-width: 400px;
-    margin: 2rem auto 0;
-  }
-
   .actions {
     justify-content: center;
     flex-direction: column;
@@ -163,14 +103,7 @@
 /* Desktop Specific Adjustments to accommodate Fixed Profile */
 @media (min-width: 901px) {
   .home-container {
-    /* Ensure content stays left of the fixed profile image */
     padding-right: 350px; 
     align-items: flex-start;
-  }
-  
-  .home-highlights {
-    /* Align highlights with text */
-    width: 100%;
-    max-width: 700px;
   }
 }
