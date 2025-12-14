@@ -1,0 +1,48 @@
+.achievements-section {
+  padding-top: 6rem;
+  justify-content: flex-start;
+}
+
+.achievements-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.group-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.group-icon {
+  color: var(--accent-color);
+}
+
+.horizontal-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  /* Hide scrollbar but keep functionality */
+  scrollbar-width: thin;
+}
+
+.achievement-card {
+  min-width: 300px;
+  max-width: 300px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  border-left: 3px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+}
+
+.achievement-card:hover {
+  color: var(--text-primary);
+  background: rgba(57, 255, 20, 0.05);
+}
