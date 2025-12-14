@@ -80,7 +80,7 @@
 /* Profile Photo Positioning */
 .profile-container {
   position: fixed;
-  top: 2rem;
+  top: 6rem; /* Moved down to avoid overlapping with social icons */
   right: 2rem;
   z-index: 100;
   transition: all 0.5s ease;
