@@ -24,10 +24,17 @@
   width: 100%;
 }
 
-.hero-text {
+/* New Box Container for Text */
+.hero-content-box {
   flex: 1;
-  max-width: 600px;
-  padding-right: 2rem;
+  max-width: 550px; /* Constrained width to avoid overlap */
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Subtle border for the "box" feel */
+  background: rgba(10, 10, 10, 0.4); /* Subtle background */
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  /* Ensure it doesn't grow too wide */
+  margin-right: auto; 
 }
 
 .hero-spacer {
@@ -37,16 +44,16 @@
 }
 
 .greeting {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem; /* Slightly smaller to fit the box nicely */
+  margin-bottom: 1rem;
   line-height: 1.1;
 }
 
 .subheading {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: var(--text-secondary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.4;
   font-family: var(--font-body);
 }
@@ -67,6 +74,7 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping if space is tight */
 }
 
 /* Mobile Responsive */
@@ -77,10 +85,12 @@
     justify-content: center;
   }
 
-  .hero-text {
-    padding-right: 0;
-    margin: 0 auto;
+  .hero-content-box {
+    padding: 1.5rem;
     max-width: 100%;
+    margin: 0 auto;
+    background: transparent; /* Remove box look on mobile if it feels too cramped, or keep it */
+    border: none;
   }
 
   .hero-spacer {
