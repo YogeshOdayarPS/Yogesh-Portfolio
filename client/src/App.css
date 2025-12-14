@@ -18,8 +18,8 @@
 }
 
 .logo-container {
-  width: 60px; /* Slightly larger logo */
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 .app-logo {
@@ -35,7 +35,7 @@
   gap: 0.5rem;
   padding: 0.25rem 0.75rem;
   border: 1px solid var(--accent-color);
-  border-radius: 12px;
+  border-radius: 12px; /* Curved box */
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   font-size: 0.75rem;
@@ -51,7 +51,7 @@
 .top-right-socials {
   position: fixed;
   top: 2rem;
-  right: 2rem;
+  right: 6rem; /* Left of profile on home, or persistent */
   z-index: 100;
   display: flex;
   gap: 1rem;
@@ -82,12 +82,12 @@
   position: fixed;
   top: 2rem;
   right: 2rem;
-  z-index: 90; /* Below socials */
+  z-index: 100;
   transition: all 0.5s ease;
 }
 
 .profile-circle {
-  width: 60px;
+  width: 60px; /* Smaller when minimized */
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
@@ -103,22 +103,21 @@
 }
 
 /* Home Mode Profile Styles (Desktop) */
-@media (min-width: 901px) {
+@media (min-width: 769px) {
   .profile-container.home-mode {
     top: 50%;
-    right: 5%; /* Positioned strictly on the right side */
+    right: 10%;
     transform: translateY(-50%);
   }
   
   .profile-container.home-mode .profile-circle {
-    width: 350px; /* Large profile image */
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-width: 4px;
   }
   
-  /* When NOT home mode, move profile down to avoid overlap with socials */
-  .profile-container:not(.home-mode) {
-    top: 6rem; 
+  /* When profile is large, move socials to top right corner properly */
+  .top-right-socials {
     right: 2rem;
   }
 }
@@ -154,7 +153,7 @@
 }
 
 /* Mobile Adjustments */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .top-left-header {
     position: absolute;
     top: 1.5rem;
@@ -162,7 +161,7 @@
   }
 
   .top-right-socials {
-    display: none; 
+    display: none; /* Hide on mobile header to avoid clutter, or move to bottom/menu */
   }
 
   .profile-container {
@@ -171,19 +170,24 @@
     right: auto;
     display: flex;
     justify-content: center;
-    padding-top: 6rem;
-    margin-bottom: -1rem;
-    transform: none !important;
+    padding-top: 5rem; /* Space below header */
+    margin-bottom: -2rem;
+  }
+  
+  .profile-container.home-mode {
+    transform: none;
+    top: auto;
+    right: auto;
   }
   
   .profile-circle {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
   }
   
   .profile-container.home-mode .profile-circle {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
   
   .main-content {
