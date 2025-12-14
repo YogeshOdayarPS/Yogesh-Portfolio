@@ -1,0 +1,307 @@
+🔥 FINAL REPLIT AI PROMPT (REACT + TYPESCRIPT + VANILLA CSS)
+
+Build a modern, interactive personal portfolio website using React with TypeScript for the frontend, inspired by a dark premium UI with neon green accents on a black background, similar to a high-end designer portfolio.
+
+🔧 TECH STACK (MANDATORY)
+
+Frontend: React + TypeScript
+
+Styling: Vanilla CSS only (NO Tailwind, NO Bootstrap, NO frameworks)
+
+State & Navigation: React state + conditional rendering (SPA)
+
+Fully responsive (desktop, tablet, mobile)
+
+Mobile-first design
+
+Smooth animations, hover & tap effects
+
+Glassmorphism cards
+
+Error-free, production-ready code (VS Code clean, no warnings)
+
+🎨 GENERAL LAYOUT RULES
+
+Right side: rounded / circular profile photo
+
+Placeholder image path: /assets/profile.jpg
+
+On every section, show the profile photo:
+
+Desktop: top-right corner
+
+Mobile: top header or centered (must not overlap content)
+
+Dark background with neon green highlights
+
+Soft glowing borders and shadows
+
+Bottom navigation bar with icons + labels
+
+Fixed bottom navigation on mobile
+
+Highlight active section
+
+Smooth animated transitions between sections
+
+📱 RESPONSIVE & MOBILE-FIRST REQUIREMENTS (STRICT)
+
+Must work perfectly on:
+
+Laptop / Desktop
+
+Tablet
+
+Mobile browsers (Android & iOS)
+
+No horizontal scrolling on mobile
+
+Text readable without zoom
+
+Touch-friendly buttons & cards
+
+Hover effects should gracefully convert to tap effects on mobile
+
+Layout behavior:
+
+Desktop → grid-based layouts
+
+Mobile → vertically stacked layouts
+
+Use:
+
+CSS media queries (@media)
+
+Flexible units (rem, %, vh, vw)
+
+Zero console errors
+
+🧭 APP STRUCTURE (REACT)
+
+Use functional components with TypeScript
+
+Suggested components:
+
+App.tsx
+
+Navbar.tsx
+
+Home.tsx
+
+Projects.tsx
+
+ProjectDetails.tsx
+
+Experience.tsx
+
+Skills.tsx
+
+Achievements.tsx
+
+Contact.tsx
+
+Use React state to control active section (no external routing library required)
+
+Keep components clean and reusable
+
+📌 BOTTOM NAVIGATION (CLICKABLE)
+
+Navigation items (icons + text):
+
+Home
+
+Projects
+
+Experience
+
+Skills
+
+Achievements
+
+Contact
+
+Clicking an item should switch sections dynamically (SPA behavior).
+
+🏠 HOME SECTION (LANDING PAGE)
+Hero Content
+
+Heading
+
+Hi, I'm Yogesh Odayar P S.
+Building technology-driven solutions that connect innovation, business, and impact.
+
+Overview Paragraph
+
+Aspiring Computer Science and Business Systems engineer with strong technical fundamentals,
+hands-on experience in web development, and a growing interest in data science.
+An active IEEE TEMS member with proven leadership skills, driven to build practical,
+scalable solutions and contribute to impactful technology initiatives.
+
+🎓 EDUCATION SECTION
+
+Display education using glassmorphism cards.
+
+B.Tech – Computer Science and Business Systems
+Sri Sairam Engineering College, West Tambaram, Chennai – 44
+GPA: 8.60 (up to IV semester)
+
+HSC
+Sri Sankara Matriculation Higher Secondary School
+Thiruvanmiyur, Chennai – 41
+Score: 92.66%
+
+🔘 ACTION BUTTONS
+
+Download Resume → /assets/resume.pdf
+
+Contact → navigate to Contact section
+
+📁 PROJECTS SECTION
+
+Display interactive glowing project cards.
+
+Project List
+
+CK KidBrace
+
+BlockED – NFT Microcredential Framework
+
+CBlock – Carbon Credit Marketplace
+
+HYDROGUARD SKYDEFENDER
+
+Clicking a project opens a Project Details view.
+
+📌 PROJECT DETAILS CONTENT
+CK KidBrace – College Project
+
+Smart wearable system for infant health monitoring
+Tech: IoT Sensors, Microcontroller, Mobile App
+Outcome: Real-time alerts & preventive child safety
+
+BlockED – NFT Microcredential Framework (Hackathon | Built & Deployed)
+
+Blockchain-based course learning platform
+Tech: Blockchain, Smart Contracts, NFTs, IPFS
+Live: https://block-ed.netlify.app/
+
+CBlock – Carbon Credit Marketplace (Hackathon / SIH)
+
+Decentralized carbon credit trading platform
+Cleared all levels of internal hackathon for SIH
+Tech: Blockchain, Smart Contracts, Web/Mobile App
+Live: https://cblock.vercel.app/
+
+HYDROGUARD SKYDEFENDER – IPR Publication
+
+Published: Sept 13, 2024
+Office of the Controller General of Patents, Govt. of India
+Paper: Homeostatic Flying Hovercraft: Efficient and Durable Solutions for Military and Rescue Missions
+
+💼 EXPERIENCE SECTION
+
+Web Developer Intern – Hyundai Motor India Limited | June 2025
+
+Problem: Manual meeting room booking conflicts
+
+Solution: Automated Room Management System
+
+Tech: HTML, CSS, JavaScript
+
+Outcome: Improved coordination & frontend experience
+
+Link:
+https://roaring-sprinkles-e7d179.netlify.app/#
+
+🛠️ SKILLS SECTION
+
+Use tag-style animated cards.
+
+Programming: Java, Python, JavaScript, C
+
+Frontend: React, HTML, CSS, Flutter
+
+Backend: Node.js
+
+Database: MySQL
+
+Tools: Git, GitHub, VS Code, Power BI, Excel
+
+Certifications: Great Learning, Accenture iAspire, Google, Cisco
+
+NPTEL: Java, DBMS, Cloud Computing, Python
+
+Interests: Data Science, Blockchain, Machine Learning, AI
+
+Soft Skills: Problem Solving, Leadership, Critical Thinking, Adaptability
+
+Hobbies: Reading, Badminton, Music
+
+🏆 ACHIEVEMENTS SECTION
+
+Create three horizontal, scrollable sections with glowing cards.
+
+🔹 Events
+
+Ideathon SDG Goal 16 – 1st Runner-Up (HydroGuard SkyDefender)
+
+Hack4Purpose – Selected Participant (Top 100 in India)
+
+SRM IST Ramapuram – 1st Prize, Paper Presentation (Phoenix’25)
+
+Sri Sairam Engineering College – 2nd Prize, ADMAD (BIS)
+
+RMK CET – 1st Place, Technical Quiz (TEZAS 2K25)
+
+Sri Sairam Engineering College – 1st Place, ADMAD (BIS)
+
+Loyola-ICAM – 1st Place, Idea Pitching (Xplore’25)
+
+St. Joseph’s Institute of Technology – 1st Place, Echo Pitch (Incognito’25)
+
+Gojan School of Business & Technology – 1st Prize Pitching, 3rd Prize Quiz
+
+New Prince Shri Bhavani College – 2nd Place, Technical Quiz
+
+MGR Educational & Research Institute – 2nd Prize, SDG Ideathon (CPT Tech Summit)
+
+🔹 Hackathons
+
+SAIHACK FEST – Winner (2024 & 2025)
+
+MEDCHAIN – Prathyusha Engineering College
+
+BLOCKED – QTUXATHON (Sri Sairam Engineering College)
+
+CBLOCK – VIT Chennai (24-hour hackathon)
+
+🔹 Coordinator & Volunteer
+
+GUVI Hackathon, INTEMSTELLAR, CONNIQXION
+Winspire 1.0
+Cognizant SPIN Event
+
+📬 CONTACT SECTION
+
+LinkedIn:
+https://www.linkedin.com/in/yogesh-odayar-p-s-8a2077293/
+
+Email:
+yogeshodayarps@gmail.com
+
+GitHub:
+https://github.com/YogeshOdayarPS
+
+✅ FINAL CONSTRAINTS
+
+❌ No Tailwind CSS
+❌ No Bootstrap
+❌ No UI frameworks
+✅ React + TypeScript only
+✅ Vanilla CSS only
+✅ Fully responsive (desktop + mobile)
+✅ Clean, maintainable, error-free code
+
+🔥 EXPECTED RESULT
+
+A premium React + TypeScript portfolio that looks great on laptop and mobile, works smoothly, and is recruiter-ready.
