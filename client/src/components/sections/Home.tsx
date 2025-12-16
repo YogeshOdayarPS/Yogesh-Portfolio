@@ -34,7 +34,7 @@ const Home: React.FC<{ setActiveSection: (s: string) => void }> = ({ setActiveSe
       {/* CENTER SECTION - Main Content */}
       <div className="center-section">
         <div className="home-content">
-          <h1 className="greeting">Hi, I'm <span className="text-neon">Yogesh Odayar P S.</span></h1>
+          <h1 className="greeting">Hi, I'm <span className="text-neon"> Yogesh Odayar P S.</span></h1>
           <h2 className="subheading">
             Building technology-driven solutions that connect <span className="highlight">innovation</span>, <span className="highlight">business</span>, and <span className="highlight">impact</span>.
           </h2>
