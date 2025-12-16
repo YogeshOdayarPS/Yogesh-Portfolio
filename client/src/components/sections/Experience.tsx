@@ -116,16 +116,22 @@ const IEEETimeline: React.FC = () => {
       delay: 0.1
     },
     {
+      role: "Event Lead",
+      organization: "IEEE TEMS SBC",
+      duration: "2024–2025",
+      delay: 0.2
+    },
+    {
       role: "Mastermind",
       organization: "MAGIC Member, IEEE TEMS SBC",
       duration: "2024–2025",
-      delay: 0.2
+      delay: 0.3
     },
     {
       role: "Secretary",
       organization: "Office Bearer, IEEE TEMS",
       duration: "2025–2026",
-      delay: 0.3
+      delay: 0.4
     }
   ];
 
