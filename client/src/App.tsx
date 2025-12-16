@@ -44,8 +44,8 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      {/* Top Left Logo & Location */}
+    <>
+      {/* Fixed Headers - Outside app-container */}
       <div className="top-left-header">
         <div className="logo-container">
           <img src={logoImg} alt="Logo" className="app-logo" />
@@ -56,7 +56,6 @@ function App() {
         </div>
       </div>
 
-      {/* Top Right Social Links (Desktop) */}
       <div className="top-right-socials">
         <a href="https://www.linkedin.com/in/yogesh-odayar-p-s-8a2077293/" target="_blank" rel="noopener noreferrer" className="social-link">
           <Linkedin size={20} />
@@ -64,10 +63,12 @@ function App() {
         <a href="https://github.com/YogeshOdayarPS" target="_blank" rel="noopener noreferrer" className="social-link">
           <Github size={20} />
         </a>
-        <a href="mailto:yogeshodayarps@gmail.com" className="social-link">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yogeshodayarps@gmail.com" target="_blank" rel="noopener noreferrer" className="social-link">
           <Mail size={20} />
         </a>
       </div>
+
+      <div className="app-container">
 
       {/* Profile Photo - Persistent */}
       <div className={`profile-container ${activeSection === 'home' ? 'home-mode' : ''}`}>
@@ -84,10 +85,11 @@ function App() {
       {/* Navigation */}
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
       
-      {/* Background Elements */}
-      <div className="bg-glow bg-glow-1"></div>
-      <div className="bg-glow bg-glow-2"></div>
-    </div>
+        {/* Background Elements */}
+        <div className="bg-glow bg-glow-1"></div>
+        <div className="bg-glow bg-glow-2"></div>
+      </div>
+    </>
   );
 }
 

@@ -41,11 +41,11 @@ const projectsData: Project[] = [
     description: 'Decentralized carbon credit trading platform.',
     tech: ['Blockchain', 'Smart Contracts', 'Web/Mobile App'],
     link: 'https://cblock.vercel.app/',
-    details: 'Decentralized carbon credit trading platform that ensures transparent issuance, verification, and trading of carbon credits aligned with AICTE student innovation guidelines. Cleared all levels of internal hackathon for SIH.',
+    details: 'Decentralized carbon credit trading platform that ensures transparent issuance, verification, and trading of carbon credits. We have Cleared all levels of internal hackathon for SIH and submitted this project under student innovation AICTE.',
   },
   {
     id: 'hydroguard',
-    title: 'HYDROGUARD',
+    title: 'HYDROGUARD SKYDEFENDER',
     category: 'Research / IPR',
     description: 'Homeostatic Flying Hovercraft for military use.',
     tech: ['IPR Publication', 'Research', 'Defence Tech'],

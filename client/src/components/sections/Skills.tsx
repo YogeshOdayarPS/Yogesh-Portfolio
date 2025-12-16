@@ -24,16 +24,16 @@ const skillCategories = [
     skills: ['Great Learning', 'Accenture iAspire', 'Google', 'Cisco (Networking Basics)']
   },
   {
-    title: 'NPTEL',
+    title: 'NPTEL Certifications',
     skills: ['Java', 'DBMS', 'Cloud Computing', 'Python']
   },
   {
-    title: 'Spoken Tutorial',
+    title: 'IIT Spoken Tutorial',
     skills: ['Java', 'C', 'CSS', 'R', 'Git']
   },
   {
     title: 'Relevant Coursework',
-    skills: ['DSA', 'DBMS', 'Cloud Computing', 'Web Technologies', 'OOP']
+    skills: ['DSA', 'DBMS', 'Cloud Computing', 'Web Technologies', 'OOPS']
   },
   {
     title: 'Interests',

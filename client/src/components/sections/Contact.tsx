@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
         </p>
         
         <div className="contact-links">
-          <a href="mailto:yogeshodayarps@gmail.com" className="contact-item">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yogeshodayarps@gmail.com" target="_blank" rel="noopener noreferrer" className="contact-item">
             <div className="icon-box">
               <Mail size={32} />
             </div>

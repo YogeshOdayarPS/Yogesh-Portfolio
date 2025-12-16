@@ -18,7 +18,7 @@
 }
 
 .logo-container {
-  width: 50px;
+  width: 150px;
   height: 50px;
 }
 
@@ -79,8 +79,8 @@
 
 /* Profile Photo Positioning */
 .profile-container {
-  position: fixed;
-  top: 6rem; /* Moved down to avoid overlapping with social icons */
+  position: absolute;
+  top: 5rem; /* Moved down to avoid overlapping with social icons */
   right: 2rem;
   z-index: 100;
   transition: all 0.5s ease;
@@ -105,14 +105,14 @@
 /* Home Mode Profile Styles (Desktop) */
 @media (min-width: 769px) {
   .profile-container.home-mode {
-    top: 50%;
-    right: 10%;
+    top: 35%;
+    right: 15%;
     transform: translateY(-50%);
   }
   
   .profile-container.home-mode .profile-circle {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-width: 4px;
   }
   
@@ -125,7 +125,8 @@
 .main-content {
   position: relative;
   z-index: 10;
-  padding-bottom: 100px; /* Space for navbar */
+  padding-bottom: 120px; /* Increased space for navbar */
+  min-height: calc(100vh - 120px); /* Ensure content doesn't overlap */
 }
 
 /* Background Glows */
@@ -152,45 +153,96 @@
   opacity: 0.1;
 }
 
-/* Mobile Adjustments */
+/* Mobile Header Layout */
 @media (max-width: 768px) {
+  /* Create a flex header container */
   .top-left-header {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    position: static !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    padding: 1rem 0 0.2rem 1rem !important;
+    margin-bottom: 0 !important;
+    z-index: auto !important;
   }
 
+  /* Social icons on the right side, vertical stack */
   .top-right-socials {
-    display: none; /* Hide on mobile header to avoid clutter, or move to bottom/menu */
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.3rem !important;
+    align-items: flex-end !important;
+    margin: 0 !important;
+    padding: 0 1rem 0 0 !important;
+    z-index: auto !important;
+  }
+  
+  .app-container {
+    position: relative !important;
+    overflow-x: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .profile-container {
-    position: relative;
-    top: auto;
-    right: auto;
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem; /* Space below header */
-    margin-bottom: -2rem;
+    display: none !important;
   }
   
   .profile-container.home-mode {
-    transform: none;
-    top: auto;
-    right: auto;
+    display: flex !important;
+    position: static;
+    justify-content: center;
+    margin: 1rem 2;
+    padding: 0;
+    
   }
   
   .profile-circle {
     width: 120px;
-    height: 120px;
+    height: 20px;
+    bottom: -50px;
   }
   
   .profile-container.home-mode .profile-circle {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
   
   .main-content {
-    padding-top: 1rem;
+    padding: 0 !important;
+    margin: 10 !important;
   }
 }
+  
+  .social-link {
+    width: 35px;
+    height: 35px;
+    top: 40px;
+    bottom: 9px;
+  }
+  
+  .social-link svg {
+    width: 16px;
+    height: 26px;
+  }
+  
+  /* Remove all unwanted spacing from sections */
+  .section {
+    min-height: auto !important;
+    padding-top: 1rem !important;
+    margin-top: 0 !important;
+  }
+  
+  /* Ensure smooth section transitions */
+  .experience-section,
+  .projects-section,
+  .skills-section,
+  .achievements-section,
+  .contact-section,
+  .education-section {
+    padding-top: 1rem !important;
+    margin-top: 0 !important;
+    min-height: auto !important;
+  }

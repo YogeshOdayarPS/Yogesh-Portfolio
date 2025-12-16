@@ -77,8 +77,8 @@ button {
 }
 
 .section {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: calc(100vh - 120px); /* Account for navbar space */
+  padding: 4rem 0 6rem 0; /* Extra bottom padding for navbar */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,6 +181,11 @@ button {
   background: rgba(57, 255, 20, 0.05);
 }
 
+/* Global Modal Rules - Ensure all modals respect navbar */
+[class*="modal"], [class*="dialog"], [class*="overlay"] {
+  z-index: 2000 !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
@@ -195,7 +200,7 @@ button {
   h2 { font-size: 2rem; }
   
   .section {
-    padding: 6rem 0 2rem 0; /* Space for fixed mobile nav/header */
+    padding: 6rem 0 8rem 0; /* More space for mobile navbar */
     min-height: auto;
   }
 }

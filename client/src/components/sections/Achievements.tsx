@@ -45,7 +45,9 @@ const achievements = [
     icon: Users,
     items: [
       'Winspire 1.0 – Panelist Speaker (March 2025)',
-      'Cognizant SPIN Event – Nov 7, 2025'
+      'Cognizant SPIN Event – Nov 7, 2025',
+      'FESTX 2024 (CSBS Department Symposium) Sathura Event Volunteer',
+      'FESTX 2025 (CSBS Department Symposium) UnlockX Event Volunteer'
     ]
   }
 ];
