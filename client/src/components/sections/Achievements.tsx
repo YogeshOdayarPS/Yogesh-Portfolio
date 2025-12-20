@@ -28,7 +28,8 @@ const achievements = [
       'SAIHACK FEST – Winner (2024 & 2025)',
       'MEDCHAIN – Prathyusha Engineering College',
       'BLOCKED – QTUXATHON (Sri Sairam Engineering College)',
-      'CBLOCK – VIT Chennai (24-hour hackathon)'
+      'CBLOCK – VIT Chennai (24-hour hackathon)',
+      'Build2Learn 4hrs hackathon, attended at Freshworks (JUL 2025)'
     ]
   },
   {
@@ -37,7 +38,9 @@ const achievements = [
     items: [
       'GUVI Hackathon (IEEE TEMS × HCL GUVI) (OCT 2025)',
       'INTEMSTELLAR – IEEE TEMS One-Day Symposium (NOV 2025)',
-      'CONNIQXION – Online Quiz Event (1st Years) (OCT 2024)'
+      'CONNIQXION – Online Quiz Event (1st Years) (OCT 2024)',
+      'NeoVision 2025 - IEEE TEMS (Apr 2025)',
+      'Winspire 1.0 Organiser, Panel host - IEEE TEMS (Feb 2025)'
     ]
   },
   {
@@ -47,7 +50,11 @@ const achievements = [
       'Winspire 1.0 – Panelist Speaker (March 2025)',
       'Cognizant SPIN Event – Nov 7, 2025',
       'FESTX 2024 (CSBS Department Symposium) Sathura Event Volunteer',
-      'FESTX 2025 (CSBS Department Symposium) UnlockX Event Volunteer'
+      'FESTX 2025 (CSBS Department Symposium) UnlockX Event Volunteer',
+      'Ascendra - IEEE TEMS 3rd Anniversary (Oct 2024)',
+      'Blockchain BootCamp - IEEE TEMS (Apr 2025)',
+      'B2B Event - IEEE TEMS (May 2025)',
+      'Ascendra - IEEE TEMS 4th Anniversary (Nov 2025)'
     ]
   }
 ];
