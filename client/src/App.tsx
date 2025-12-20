@@ -70,12 +70,14 @@ function App() {
 
       <div className="app-container">
 
-      {/* Profile Photo - Persistent */}
-      <div className={`profile-container ${activeSection === 'home' ? 'home-mode' : ''}`}>
-        <div className="profile-circle">
-          <img src={profileImg} alt="Yogesh Odayar P S" />
+      {/* Profile Photo - Only show on non-home sections */}
+      {activeSection !== 'home' && (
+        <div className="profile-container">
+          <div className="profile-circle">
+            <img src={profileImg} alt="Yogesh Odayar P S" />
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Main Content Area */}
       <main className="main-content container">
