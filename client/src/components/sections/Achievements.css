@@ -144,12 +144,13 @@
 }
 
 .slider-card.highlight-card {
-  background: rgba(0, 255, 127, 0.15); /* More visible highlight */
-  border-color: rgba(0, 255, 127, 0.5);
+  /* Removed default green styling - only show green on interaction */
+  background: rgba(20, 20, 20, 0.85);
+  border-color: rgba(255, 255, 255, 0.2);
   box-shadow: 
-    0 15px 50px rgba(0, 255, 127, 0.2),
-    0 0 0 1px rgba(0, 255, 127, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    0 15px 50px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .center-card:hover {
@@ -370,13 +371,13 @@
   }
   
   .slider-card.mobile-single-card.highlight-card {
-    background: rgba(0, 255, 127, 0.08);
-    border-color: rgba(57, 255, 20, 0.5);
+    /* Removed default green styling - only show green on interaction */
+    background: rgba(15, 15, 15, 0.95);
+    border-color: rgba(57, 255, 20, 0.3);
     box-shadow: 
-      0 8px 32px rgba(0, 255, 127, 0.2),
-      0 0 0 1px rgba(57, 255, 20, 0.2),
-      inset 0 1px 0 rgba(255, 255, 255, 0.15),
-      0 0 20px rgba(57, 255, 20, 0.15);
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      0 0 0 1px rgba(57, 255, 20, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   
   /* Center-align content in mobile single cards */
