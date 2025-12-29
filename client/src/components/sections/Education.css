@@ -23,9 +23,11 @@
 
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .edu-card {
@@ -33,6 +35,13 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 200px;
+}
+
+.edu-card-center {
+  grid-column: 1 / -1;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .edu-year {
@@ -50,7 +59,13 @@
 
 .edu-school {
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.edu-description {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-style: italic;
 }
 
 .edu-score {
@@ -58,4 +73,18 @@
   margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid var(--border-color);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  
+  .edu-card-center {
+    grid-column: 1;
+    max-width: 100%;
+    margin-top: 0;
+  }
 }

@@ -31,6 +31,17 @@ const Education: React.FC = () => {
           <p className="edu-school">Sri Sankara Matriculation Higher Secondary School, Thiruvanmiyur, Chennai</p>
           <div className="edu-score">Score: <span className="text-neon">92.66%</span></div>
         </motion.div>
+
+        <motion.div 
+          className="glass-card edu-card edu-card-center"
+          whileHover={{ scale: 1.02 }}
+        >
+          <div className="edu-year">Completed</div>
+          <h3 className="edu-degree">Praveen Uttarardh in Hindi (Full Course)</h3>
+          <p className="edu-school">Dakshin Bharat Hindi Prachar Sabha (DBHPS), Chennai</p>
+          <p className="edu-description">Completed the full Hindi exam series up to Praveen Uttarardh.</p>
+          <div className="edu-score">Equivalent to <span className="text-neon">B.A. (Hindi)</span> level; recognized by Central & State Governments.</div>
+        </motion.div>
       </div>
     </motion.div>
   );
